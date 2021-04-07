@@ -1,0 +1,249 @@
+.sidebar {
+    .scriber {
+        position: absolute;
+        width: 30px;
+        height: 35.08px;
+        left: 30px;
+        top: 33.54px;
+    
+        
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15.2542px;
+        line-height: 90%;
+        
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    
+        color: #ABB6CA;
+        word-wrap:break-word;
+        transform: rotate(90deg);
+    }
+
+    //Sidebar show and styles
+    .nav-menu {
+        position: fixed;
+        height: 100vh;
+        width: 89px;
+        background-color: #354052;
+        justify-content: center;
+        transition: width ease .6s;
+        
+        overflow: hidden;
+    }
+
+    .nav-menu.active {
+        width: 268px;
+        transition: 350ms;
+    }
+
+    .multi-level {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    // Sidebar toggle button
+    .toggleMenu {
+        position: fixed;
+        bottom: 10%;
+        left: 9px;
+    }
+    
+    input#menu {
+        display: none;
+    }
+    
+    .icon {
+        cursor: pointer;
+        display: block;
+        height: 24px;
+        padding: 20px;
+        width: 24px;
+    }
+    
+    label.icon {
+        position: fixed;
+        z-index: 200;
+    }
+    
+    .icon .menu,
+    .icon .menu::before,
+    .icon .menu::after {
+        background: #ABB6CA;
+        content: '';
+        display: block;
+        height: 3px;
+        position: absolute;
+        transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+        width: 30px;
+    }
+    
+    .icon:hover .menu,
+    .icon:hover .menu::before,
+    .icon:hover .menu::after {
+        background: white;
+    }
+    
+    .icon .menu {
+        left: 18px;
+        top: 27px;
+    }
+    
+    .icon .menu::before {
+        top: -6px;
+    }
+    
+    .icon .menu::after {
+        top: 6px;
+    }
+
+    //Showing sub-menus
+    #menu:checked ~ .multi-level, .item input:checked ~ ul {
+        display: block;
+    }
+
+    .item ul, nav input[type="checkbox"] {
+        display: none;
+    }
+
+    #menu:checked ~ .multi-level, .item input:checked ~ ul {
+        display: block;
+    }
+
+    #menu:checked + .icon .menu {
+        background: transparent;
+    }
+    
+    #menu:checked + .icon .menu::before {
+        transform: rotate(45deg);
+    }
+    
+    #menu:checked + .icon .menu::after {
+        transform: rotate(-45deg);
+    }
+    
+    #menu:checked + .icon .menu::before,
+    #menu:checked + .icon .menu::after {
+        top: 0;
+        transition: top ease .3s, transform ease .3s .3s;
+    }
+    //Sidebar Items
+    
+    span {
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
+
+    label {
+        width: 100%;
+        display: block;
+        z-index: 3;
+        position: relative;
+        
+        padding: 8px 0px 8px 16px;
+        list-style: none;
+        height: 60px;
+    }
+
+    nav ul, nav li, label {
+        line-height: 50px;
+        margin: 0;
+        padding: 0 2em;
+        list-style: none;
+        text-decoration: none;
+        color: #90A4AE;
+        font-weight: 100;
+        width: 100%;
+    }
+
+    .item ul {
+        padding: 0 0.25em;
+    }
+
+    .item label svg {
+        margin-right: 38px;
+    }
+
+    li a svg {
+        margin-right: 10px;
+    }
+
+    .create-folder svg {
+        margin-right: 38px;
+    }
+
+    .folder-input input {
+        width: 180px;
+        box-sizing: border-box;
+        border: 2px solid #263238;
+        background-color: #62727b;
+        color: white;
+        border-radius: 4px;
+        font-size: 16px;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 6px 10px 6px 6px;
+        margin-left: 32px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .folder-input {
+        display: none;
+    }
+    .folder-input.active {
+        display: block;
+    }
+
+    .item label svg:nth-child(2) {
+        margin-left: 5px;
+    }
+
+    nav div label,
+    nav div a {
+        line-height: 50px;
+        margin: 0;
+        list-style: none;
+
+        text-decoration: none;
+        color: #ABB6CA;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        padding: 10px 32px;
+        border-radius: 4px;
+        width: 300px;
+    }
+
+    nav div .item label:hover,
+    nav div .sub-item label:hover,
+    nav div a:hover {
+        background-color: #2F3949;
+        color: white;
+    }
+    
+    .newsletters {
+        margin-top: 100px;
+    }
+
+    .profile {
+        position: absolute;
+        bottom: 100px;
+        
+    }
+
+    .profile a {
+        display: block;
+        line-height: initial;
+    }
+
+    .email {
+        display: block;
+        margin-left: 58px;
+        font-size: 14px;
+    }
+}

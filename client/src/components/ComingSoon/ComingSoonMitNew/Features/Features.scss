@@ -1,0 +1,18 @@
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:900px) {
+    .features {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:732px) {
+    .features {
+        justify-content: space-around;
+    }
+}

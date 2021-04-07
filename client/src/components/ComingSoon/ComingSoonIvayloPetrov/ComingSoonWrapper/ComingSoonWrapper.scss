@@ -1,0 +1,29 @@
+@import "../variables";
+.coming-soon-wrapper {
+    box-sizing: initial;
+    width: $xl-container-width;
+
+    border: 6px solid #080808;
+    border-radius: 8px;
+    margin: 80.39px auto;
+
+    @media screen and (max-width: $lg-screen-width-max) {
+        width: $lg-container-width-max;
+    }
+
+    @media screen and (max-width: $md-screen-width-max) {
+        width: $md-container-width-max;
+    }
+
+    @media screen and (max-width: $sm-screen-width-max) {
+        width: $sm-container-width-max;
+    }
+
+    @media screen and (max-width: $xs-screen-width-max) {
+       width: 440px;
+    }
+
+    @media screen and (max-width: 549px) {
+        width: 80%;
+    }
+}

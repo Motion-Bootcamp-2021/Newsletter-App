@@ -1,0 +1,22 @@
+.subscribe-button {
+    width: 195px;
+    height: 60px;
+    background-color: #1D1D1F;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    border:0;
+    font-weight: 800;
+    padding: 24px 51px 26px 51px;
+
+    @media (max-width: 900px){ 
+        width: 345px;
+    }
+    
+    @media (max-width: 600px) {
+        margin: auto;
+        height: 39px;
+        width: 280px;
+    }
+}

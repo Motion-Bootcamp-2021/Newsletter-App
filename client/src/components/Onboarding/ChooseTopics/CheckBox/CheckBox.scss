@@ -1,0 +1,59 @@
+.choose-topic-check-box{
+
+    [type="checkbox"]:not(:checked) {
+        width: 0;
+        height: 0;
+    }
+    [type="checkbox"]:checked {
+        width: 0;
+        height: 0;
+    }
+
+    [type="checkbox"]:not(:checked) + label{
+        font-weight: bold;
+        font-family:  "Scto Grotesk A", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 210%;
+        /* or 38px */
+
+        letter-spacing: -0.02em;
+
+        color: #050505;
+    }
+    
+    [type="checkbox"]:checked + label{
+        font-family:  "Scto Grotesk A", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 210%;
+        /* or 38px */
+
+        letter-spacing: -0.02em;
+
+        color: #050505;
+    }
+    
+    .line {
+        position: absolute;
+        left: 258px;
+
+        width: 258px;
+        height: 1px;
+        border: 1px solid #000000;
+        margin: 20px;
+        display:inline-block;
+      }
+
+    hr{
+        position: relative;
+        width: 258px;
+        height: 1px;
+        left: 268px;
+        top: 0px;
+
+        background: #000000;
+    }
+}

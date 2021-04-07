@@ -1,0 +1,28 @@
+@import "./variables";
+
+.coming-soon-page {
+    width: $xl-screen-width-min;
+    margin: auto;
+
+    font-family: Roboto, sans-serif;
+
+    @media screen and (max-width: $lg-screen-width-max) {
+        width: $lg-screen-width-min;
+    }
+
+    @media screen and (max-width: $md-screen-width-max) {
+        width: $md-screen-width-min;
+    }
+
+    @media screen and (max-width: $sm-screen-width-max) {
+        width: $sm-screen-width-min;
+    }
+
+    @media screen and (max-width: $xs-screen-width-max) {
+        width: $xs-screen-width-min;
+    }
+
+    @media screen and (max-width: 549px) {
+        width: 100%;
+    }
+}

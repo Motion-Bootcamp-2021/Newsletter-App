@@ -1,0 +1,138 @@
+$xl-screen-width-min: 1440px;
+$lg-screen-width-min: 1200px;
+$md-screen-width-min: 960px;
+$sm-screen-width-min: 540px;
+$xs-screen-width-min: 320px;
+
+.paragraph-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // width: 180px;
+
+    .paragraph-icon{
+        display: flex;
+        justify-content: center;
+        // width: 82px;
+        // padding-top: 23px;
+        // padding-bottom: 23px;
+
+        background-color: #F8F8F8;
+        // margin-bottom: 28px;
+    }
+
+    .paragraph-props{
+        border-top: 3px solid #F8F8F8;
+        // padding-top: 30px;
+        // padding-bottom: 88px;
+
+        .paragraph-heading{
+            padding-bottom: 5px;
+
+            h4{
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.4;
+                letter-spacing: normal;
+                white-space: pre-wrap;
+            }
+        }
+
+        .paragraph-content{
+            p{
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 12px;
+                color: #7C8CA5;
+                line-height: 1.5;
+                letter-spacing: normal;
+                white-space: pre-wrap;
+            }
+        }
+    }
+
+    @media(min-width: $xs-screen-width-min){
+        width: 140px;
+
+        .paragraph-icon{
+            width: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .paragraph-props{
+            padding-bottom: 20px;
+            padding-top: 10px;
+
+            .paragraph-heading{
+                h4{
+                    font-size: 10px;
+                }
+            }
+    
+            .paragraph-content{
+                p{
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+    
+    @media(min-width: $sm-screen-width-min){
+        width: 140px;
+
+        .paragraph-icon{
+            width: 60px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 28px;
+        }
+
+        .paragraph-props{
+            padding-bottom: 50px;
+            padding-top: 30px;
+
+            .paragraph-heading{
+                h4{
+                    font-size: 12px;
+                }
+            }
+    
+            .paragraph-content{
+                p{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    
+    @media(min-width: $md-screen-width-min){
+        width: 180px;
+
+        .paragraph-icon{
+            width: 82px;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            margin-bottom: 28px;
+        }
+
+        .paragraph-props{
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+            .paragraph-heading{
+                h4{
+                    font-size: 16px;
+                }
+            }
+    
+            .paragraph-content{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

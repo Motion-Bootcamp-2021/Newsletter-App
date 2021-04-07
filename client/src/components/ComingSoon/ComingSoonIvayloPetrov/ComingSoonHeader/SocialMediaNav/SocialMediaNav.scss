@@ -1,0 +1,32 @@
+.social-media-nav {
+    @media screen and (max-width: 549px) {
+        margin-bottom: 10px;
+    }
+    .social-media-nav-list {
+        display: flex;
+        list-style-type: none;
+
+        @media screen and (max-width: 549px) {
+            padding: 0;
+            margin-top: 0;
+        }
+
+        li {
+            margin-left: 9px;
+        }
+
+        li:nth-child(1) {
+            margin-left: 0;
+        }
+
+        a:hover {
+            .a {
+                fill: #fff;
+            }
+
+            .b {
+                fill: #ced6e0;
+            }
+        }
+    }
+}

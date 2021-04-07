@@ -1,0 +1,72 @@
+.explore {
+    
+    width: 1440px;
+    background: #ffffff;
+
+    font-family: "Scto Grotesk A", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.02em;
+
+    .header {
+        h1 {
+            position: absolute;
+            width: 251px;
+            height: 84px;
+            left: 366px;
+            top: 64px;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            font-size: 70px;
+            line-height: 84px;
+            color: #050505;
+        }
+
+        label {
+            position: absolute;
+            width: 54px;
+            height: 24px;
+            left: 1286px;
+            top: 94px;
+
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+    }
+
+    .main {
+        position: relative;
+        width: 974px;
+        left: 366px;
+        top: 213px;
+
+        .aside {
+            position: absolute;
+            width: 247px;
+            height: 86px;
+
+            text-align: left;
+            font-size: 16px;
+            line-height: 24px;
+            color: #050505;
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: 258px 258px 258px;
+            grid-gap: 10px;
+
+            position: absolute;
+            right: 0;
+        }
+    }
+}

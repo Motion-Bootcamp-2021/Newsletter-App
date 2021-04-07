@@ -1,0 +1,117 @@
+$xl-screen-width-min: 1440px;
+$lg-screen-width-min: 1200px;
+$md-screen-width-min: 960px;
+$sm-screen-width-min: 540px;
+$xs-screen-width-min: 320px;
+
+.header{
+    display: flex;
+    filter: drop-shadow(0px 5px 20px #747D8C29);
+    padding-bottom: 80.39px;
+
+    .header-container{
+        width: 95%;
+        background: #F9FAFC;
+        display: flex;
+        // justify-content: space-between;
+   
+        .logo-element{
+            // margin-top: 52.78px;
+            // margin-left: 100px;
+        }
+
+        .soc-media{
+            display: flex;
+            justify-content: space-between;
+
+            // margin-top: 44px;
+            // margin-right: 46px;
+
+            // width: 158px;
+        }   
+    }
+}
+
+.header::before{
+    content: '';
+    border-right: 54px solid #F9FAFC;
+    border-bottom: 120px solid transparent;      
+  }
+
+.header::after{
+    content: '';
+    border-left: 54px solid #F9FAFC;
+    border-bottom: 120px solid transparent;
+}
+
+@media(min-width: $xs-screen-width-min){
+    .header-container{
+        flex-direction: column;
+
+        .logo-element{
+            display: flex;
+            justify-content: center;
+
+            margin-top: 20px;
+      
+            // margin-left: 10px;
+        }
+
+        .soc-media{
+            display: flex;
+            justify-content: space-between;
+      
+
+            margin-top: 20px;
+            // margin-right: 10px;
+
+            width: 100%;
+
+            
+        }  
+    }
+}
+
+@media(min-width: $sm-screen-width-min){
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logo-element{
+            margin-top: 52.78px;
+            margin-left: 20px;
+        }
+
+        .soc-media{
+            margin-top: 44px;
+            margin-right: 20px;
+
+            width: 148px;
+
+            display: flex;
+            justify-content: space-between;
+        }  
+    }
+}
+
+@media(min-width: $md-screen-width-min){
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+   
+        .logo-element{
+            margin-top: 52.78px;
+            margin-left: 100px;
+        }
+
+        .soc-media{
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 44px;
+            margin-right: 46px;
+
+            width: 158px;
+        }   
+    } 
+}

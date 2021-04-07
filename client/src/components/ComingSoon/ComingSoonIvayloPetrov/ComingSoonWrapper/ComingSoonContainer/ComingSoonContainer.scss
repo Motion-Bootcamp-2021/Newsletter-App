@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.coming-soon-container {
+    width: $lg-container-width;
+    margin: 78px auto 80.38px auto;
+
+    .coming-soon-subscribe {
+        margin-top: 79px;
+        margin-bottom: 127px;
+
+        @media screen and (max-width: $md-screen-width-max) {
+            margin-bottom: 70px;
+        }
+    }
+
+    .coming-soon-subscribed {
+        margin-top: 79px;
+        margin-bottom: 207px;
+
+        @media screen and (max-width: $md-screen-width-max) {
+            margin-bottom: 150px;
+        }
+    }
+
+    @media screen and (max-width: $md-screen-width-max) {
+        width: 670px;
+    }
+
+    @media screen and (max-width: $sm-screen-width-max) {
+        width: 480px;
+    }
+
+    @media screen and (max-width: $xs-screen-width-max) {
+        width: 420px;
+    }
+
+    @media screen and (max-width: 549px) {
+        width: 90%;
+    }
+}

@@ -1,0 +1,98 @@
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px 127px;
+
+    .email-input {
+        max-width: 345px;
+        width: 100%;
+        height: 59px;
+        margin-right: 20px;
+        padding: 20px 20px 25px 25px;
+        font-size: 16px;
+        color: #7C8CA5;
+        border: 1px solid #7C8CA5;
+        outline: none;
+        box-shadow: none;
+    }
+    
+    .error-msg {
+        display: none;
+    }
+
+    .invalid {
+        border-color: red;
+
+        & + .error-msg {
+            display: block;
+        }
+
+        & + .error-msg::before {
+            content: 'Invalid Email!';
+            position: absolute;
+            margin-top: 20px;
+            margin-left: -120px;
+            color: red;
+            font-size: 14px;
+        }
+    }
+
+    .subscribe-btn {
+        max-width: 195px;
+        width: 100%;
+        height: 60px;
+        border: none;
+        outline: none;
+        background-color: #1D1D1F;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0px #57606F;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .subscribe-container {
+        display: flex;
+        margin: 0 50px 55px;
+        align-items: center;
+        flex-direction: column;
+
+        .email-input {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
+        .subscribe-btn {
+            max-width: 345px;
+        }
+
+        .invalid + .error-msg::before {
+            margin-top: -60px;
+            margin-left: 9%;
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    .subscribe-container {
+        margin: 0 40px 55px;
+
+        .email-input {
+            height: 50px;
+        }
+
+        .subscribe-btn {
+            height: 50px;
+        }
+
+        .invalid + .error-msg::before {
+            margin-top: -53px;
+            margin-left: 8%;
+            font-size: 12px;
+        }
+    }
+}

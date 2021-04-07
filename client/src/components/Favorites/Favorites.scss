@@ -1,0 +1,51 @@
+.favorites {
+    // position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #ffffff;
+
+    font-family: "Scto Grotesk A", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.02em;
+
+    .header {
+        h1 {
+            position: absolute;
+            width: 306px;
+            height: 84px;
+            left: 366px;
+            top: 64px;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            font-size: 70px;
+            line-height: 84px;
+            color: #050505;
+        }
+
+        label {
+            position: absolute;
+            width: 54px;
+            height: 24px;
+            left: 1286px;
+            top: 94px;
+
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 258px 258px 258px;
+        grid-gap: 58px 100px;
+        width: 974px;
+
+        position: relative;
+        left: 366px;
+        top: 213px;
+    }
+}

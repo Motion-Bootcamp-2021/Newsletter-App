@@ -1,0 +1,56 @@
+.coming-soon-benefit {
+    width: 182.5px;
+
+    .benefit-icon-container {
+        width: 82px;
+        height: 82px;
+        background: #f8f8f8;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 549px) {
+            margin: auto;
+        }
+    }
+
+    .benefit-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #22262a;
+        line-height: 22px;
+
+        padding-right: 66px;
+        white-space: pre-wrap;
+
+        padding-top: 32.5px;
+        border-top: 1px solid #f1f2f6;
+        margin-top: 30.5px;
+        margin-bottom: 0;
+
+        @media screen and (max-width: 549px) {
+            padding-right: 0;
+            text-align: center;
+            white-space: normal;
+        }
+    }
+
+    .benefit-description {
+        font-size: 12px;
+        font-weight: 400;
+        color: #7c8ca5;
+        line-height: 18px;
+
+        padding-right: 10px;
+        white-space: pre-wrap;
+
+        margin-top: 12px;
+
+        @media screen and (max-width: 549px) {
+            padding-right: 0;
+            text-align: center;
+            white-space: normal;
+        }
+    }
+}

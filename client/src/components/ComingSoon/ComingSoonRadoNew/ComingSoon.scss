@@ -1,0 +1,13 @@
+$xl-screen-width-min: 1440px;
+$lg-screen-width-min: 1200px;
+$md-screen-width-min: 960px;
+$sm-screen-width-min: 540px;
+$xs-screen-width-min: 320px;
+
+.page{
+
+    .main-container{
+        display: flex;
+        justify-content: center;
+    }
+}

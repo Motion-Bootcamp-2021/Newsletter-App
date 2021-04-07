@@ -1,0 +1,120 @@
+$xl-screen-width-min: 1440px;
+$lg-screen-width-min: 1200px;
+$md-screen-width-min: 960px;
+$sm-screen-width-min: 540px;
+$xs-screen-width-min: 320px;
+
+.input-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .input-heading-element{
+        display: flex;
+        justify-content: center;
+
+        h3{
+            font-family: Roboto;
+            font-weight: 400;
+            // font-size: 20px;
+            letter-spacing: 24;
+
+            span{
+                color: #3742FA;
+            }
+
+            
+            @media(min-width: $xs-screen-width-min){
+                font-size: 8px;
+            }
+        
+            @media(min-width: $sm-screen-width-min){
+                font-size: 12px;
+            }
+    
+            @media(min-width: $md-screen-width-min){
+                font-size: 20px;
+            }
+        }
+
+        padding-bottom: 20.5px;
+    }
+
+    .input-element{
+        display: flex;
+        justify-content: center;
+        
+        input {
+            // width: 348px;
+            // height: 60px;
+            margin-right: 20px;
+            opacity: 0.4;
+        }
+
+        input::placeholder{
+            // font-size: 15px;
+            padding-left: 20px;
+            font-stretch: semi-expanded;
+        }
+
+        button{
+            // width: 198px;
+            // height: 60px;
+            background-color: #1D1D1F;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-stretch: semi-expanded;
+        }
+
+        @media(min-width: $xs-screen-width-min){
+            input {
+                width: 150px;
+                height: 40px;
+            }
+
+            input::placeholder{
+                font-size: 10px;
+            }
+
+            button{
+                width: 198px;
+                height: 40px;
+                font-size: 10px;
+            }
+        }
+    
+        @media(min-width: $sm-screen-width-min){
+            input {
+                width: 210px;
+                height: 50px;
+            }
+
+            input::placeholder{
+                font-size: 15px;
+            }
+
+            button{
+                width: 110px;
+                height: 50px;
+                font-size: 16px;
+            }
+        }
+
+        @media(min-width: $md-screen-width-min){
+            input {
+                width: 348px;
+                height: 60px;
+            }
+
+            input::placeholder{
+                font-size: 15px;
+            }
+
+            button{
+                width: 198px;
+                height: 60px;
+                font-size: 20px;
+            }
+        }
+    }
+}

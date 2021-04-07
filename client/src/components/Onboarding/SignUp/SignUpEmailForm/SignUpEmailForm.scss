@@ -1,0 +1,93 @@
+.signUp-email{
+    display: grid;
+    grid-template-rows: 55px 55px ;
+    grid-gap: 16px;
+
+    position: absolute;
+    width: 348px;
+    height: 268px;
+    left: 546px;
+    top: 449px;
+
+    button{
+        position: relative;
+        width: 348px;
+        height: 55px;
+        left: 0px;
+        top: 0px;
+                
+        background: #000000;
+        
+        font-family: Scto Grotesk A;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+}   
+
+.signUp-email-method{
+    display: grid;
+    grid-template-rows: 55px 55px;
+    grid-gap: 16px;
+
+    font-family:"Scto Grotesk A", sans-serif;
+    font-style: normal;
+
+    position: absolute;
+    width: 348px;
+    height: 268px;
+    left: 546px;
+    top: 449px;
+
+    .next-step-text {
+        position: absolute;
+        width: 71px;
+        height: 19px;
+        left: -89px;
+        top: 390px;
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        
+        letter-spacing: -0.02em;
+        
+        color: #000000;
+    }
+
+    .next-step-arrow {
+        position: absolute;
+        width: 17px;
+        height: 19px;
+        left: 0px;
+        top: 390px;
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+        
+        letter-spacing: -0.02em;
+        
+        color: #000000;
+    }
+    button{
+        position: relative;
+        width: 348px;
+        height: 55px;
+
+        background: #000000;
+        
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+}   
+    

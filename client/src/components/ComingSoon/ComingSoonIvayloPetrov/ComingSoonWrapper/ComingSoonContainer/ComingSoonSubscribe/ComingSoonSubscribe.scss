@@ -1,0 +1,124 @@
+@import "../../../variables";
+
+.coming-soon-subscribe {
+    width: $xs-container-width;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (max-width: $sm-screen-width-max) {
+        width: 453px;
+    }
+
+    @media screen and (max-width: $xs-screen-width-max) {
+        width: 420px;
+    }
+
+    @media screen and (max-width: 549px) {
+        width: 100%;
+    }
+
+    p {
+        font-size: 20px;
+        color: #080808;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+
+        margin-bottom: 20.5px;
+
+        @media screen and (max-width: $sm-screen-width-max) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: $xs-screen-width-max) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 549px) {
+            font-size: 12px;
+        }
+    }
+
+    .coming-soon-subscribe-input {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1px;
+
+        @media screen and (max-width: $xs-screen-width-max) {
+            width: 395px;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 549px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 549px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        input {
+            box-sizing: initial;
+            flex-basis: 320.5px;
+            height: 58px;
+
+            border: 1px solid #e1e5eb;
+            padding-left: 20.65px;
+
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.2px;
+            line-height: 18px;
+            color: #7c8ca5;
+
+            @media screen and (max-width: $sm-screen-width-max) {
+                flex-basis: 251px;
+                height: 52px;
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: $xs-screen-width-max) {
+                flex-basis: 217px;
+            }
+
+            @media screen and (max-width: 549px) {
+                flex-basis: 100%;
+                text-align: center;
+                padding: 0;
+                margin-bottom: 5px;
+            }
+        }
+
+        button {
+            all: initial;
+            font-family: Roboto, sans-serif;
+            height: 60px;
+            flex-basis: 195px;
+            background: #1d1d1f;
+
+            color: #ffffff;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 1px;
+
+            cursor: pointer;
+
+            @media screen and (max-width: $sm-screen-width-max) {
+                flex-basis: 160px;
+                height: 54px;
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: $xs-screen-width-max) {
+                flex-basis: 139px;
+            }
+
+            @media screen and (max-width: 549px) {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

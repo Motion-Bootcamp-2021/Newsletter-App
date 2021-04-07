@@ -1,0 +1,126 @@
+$xl-screen-width-min: 1440px;
+$lg-screen-width-min: 1200px;
+$md-screen-width-min: 960px;
+$sm-screen-width-min: 540px;
+$xs-screen-width-min: 320px;
+
+.main{
+    // width: 1240px;
+    border: 10px solid #313131;
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: center;
+
+    .main-element{
+        width: 80%;
+        flex-direction: column;
+
+        .heading-container{
+            padding-top: 78px;
+            padding-bottom: 79px;
+        }
+
+        // .input-container{
+        //   padding-bottom: 127.5px;
+        // }
+
+        .paragraphs{
+            display: flex;
+            justify-content: center;
+   
+            .paragraph-container{
+                // width: 97%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    @media(min-width: $xs-screen-width-min){
+        width: 310px;
+
+        .input-container{
+            padding-bottom: 40px;
+          }
+
+        .paragraphs{
+   
+            .paragraph-container{
+                width: 97%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    
+    @media(min-width: $sm-screen-width-min){
+        width: 520px;
+
+        .input-container{
+            padding-bottom: 60px;
+          }
+
+        .paragraphs{
+   
+            .paragraph-container{
+                width: 85%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+    
+    @media(min-width: $md-screen-width-min){
+        width: 900px;
+
+        .input-container{
+            padding-bottom: 80px;
+          }
+
+        .paragraphs{
+   
+            .paragraph-container{
+                width: 70%;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    
+    @media(min-width: $lg-screen-width-min){
+        width: 1050px;
+
+        .input-container{
+            padding-bottom: 127.5px;
+          }
+
+        .paragraphs{
+   
+            .paragraph-container{
+                width: 97%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    
+    @media(min-width: $xl-screen-width-min){
+        width: 1240px;
+
+        .input-container{
+            padding-bottom: 127.5px;
+          }
+
+        .paragraphs{
+   
+            .paragraph-container{
+                width: 97%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

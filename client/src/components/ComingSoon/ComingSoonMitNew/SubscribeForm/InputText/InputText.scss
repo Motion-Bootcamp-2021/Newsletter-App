@@ -1,0 +1,27 @@
+.input-text{
+
+     .input-text-field {
+        width: 345px;
+        height: 59px;
+        background: #FFFFFF;
+        border: 1px solid #E1E5EB;
+
+        @media (max-width: 900px){ 
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            margin-bottom: 10px;
+            height: 39px;
+            width: 280px;
+        }
+    
+    }
+
+    .input-text-field::placeholder {
+        font-size: 11px;
+        color: #7C8CA5;
+        
+        padding-left: 21px;
+    }
+}

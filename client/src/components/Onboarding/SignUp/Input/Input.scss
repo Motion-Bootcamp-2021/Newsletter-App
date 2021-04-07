@@ -1,0 +1,35 @@
+.inputField{
+    position: relative;
+    width: 348px;
+    height: 55px;
+
+    input{
+        position: relative;
+        width: 348px;
+        height: 55px;
+
+        border: 1px solid #000000;
+        box-sizing: border-box;   
+    }
+    input::-webkit-input-placeholder {
+        position: absolute;
+        width: 156.47px;
+        height: 19px;
+        top: 468px;
+        left: 568.93px;
+    
+        font-family: "Scto Grotesk A", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .error {
+        color: red;
+
+        position: absolute;
+        top:  0px;
+        left: 370px;
+    }
+}

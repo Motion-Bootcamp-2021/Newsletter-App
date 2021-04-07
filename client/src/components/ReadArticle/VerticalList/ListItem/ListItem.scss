@@ -1,0 +1,59 @@
+.params{
+    width: 258px;
+    height: 88px;
+    padding-bottom: 120px;
+
+    .headerText {
+        // position: absolute;
+        width: 258px;
+        height: 57px;
+        // top: 143px;
+        // left: 189px;
+        display: block;
+        text-decoration: none;
+        // margin-bottom: 5px;
+
+        font-family: Scto Grotesk A;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+
+        color: #050505;
+    }
+    
+    .dateText{
+        position: absolute;
+        width: 49px;
+        height: 19px;
+        // left: 189px;
+        // top: 212px;
+
+        font-family: Scto Grotesk A;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 120%;
+
+        letter-spacing: -0.02em;
+
+        color: #050505;
+    }
+
+    .circle{
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 240px;
+        // top: 71px;
+        border-radius: 50%;
+
+        background: #000000;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+}
+
+.params:hover{
+    cursor:pointer
+}

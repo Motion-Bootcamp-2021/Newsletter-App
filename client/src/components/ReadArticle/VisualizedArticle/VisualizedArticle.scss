@@ -1,0 +1,44 @@
+.article{
+    position: absolute;
+    // width: 526px;
+    // height: 111px;
+    left: 725px;
+    top: 143px;
+
+    .header{
+        // position: absolute;
+        width: 526px;
+        height: 111px;
+        // left: 1140px;
+        // top: 50px;
+        margin-bottom: 55px;
+    
+        font-family: Scto Grotesk A;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 96.1%;
+        letter-spacing: -0.02em;
+    
+        color: #050505;
+    }
+
+    .text{
+        // position: absolute;
+        width: 526px;
+        // height: 319px;
+        // left: 725px;
+        // top: 391px;
+        margin-bottom: 25px;
+
+        font-family: Scto Grotesk A;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 195%;
+
+        letter-spacing: -0.02em;
+
+        color: #050505;
+    }
+}

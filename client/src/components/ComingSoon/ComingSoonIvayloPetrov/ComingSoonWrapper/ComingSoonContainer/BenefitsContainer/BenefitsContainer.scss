@@ -1,0 +1,28 @@
+@import "../../../variables";
+
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $md-screen-width-max) {
+        flex-wrap: wrap;
+        width: 500px;
+        margin: 0 auto;
+        .coming-soon-benefit {
+            margin-top: 35px;
+        }
+    }
+
+    @media screen and (max-width: $sm-screen-width-max) {
+        width: 453px;
+    }
+
+    @media screen and (max-width: $xs-screen-width-max) {
+        width: 390px;
+    }
+
+    @media screen and (max-width: 549px) {
+        width: 90%;
+        justify-content: center;
+    }
+}

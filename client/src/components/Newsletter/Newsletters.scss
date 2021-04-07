@@ -1,0 +1,112 @@
+.newsletter-page {
+    
+
+    div.main {
+        position: relative;
+        width: 500px;
+        margin: 0 auto;
+
+        button.go-back {
+            position: absolute;
+            top: 25px;
+            left: -50%;
+            border: none;
+            background-color: transparent;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: 36px;
+            color: #050505
+        }
+
+        div.msg-body {
+            position: relative;
+            display: inline-block;
+
+            span.avatar {
+                position: absolute;
+                top: 115px;
+                left: -130px;
+                
+            }
+
+            span.avatar img {
+                width: 100px;
+                border: 2px solid #ccc;
+                border-radius: 50%;
+            }
+
+            p.msg-text {
+                display: inline-block;
+                margin-top: 100px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 195%;
+                letter-spacing: -0.02em;
+                color: #050505;
+            }
+
+            div.msg-footer {
+                position: relative;
+                margin: 60px 0;
+
+                span.msg-topic {
+                    position: absolute;
+                    left: 0;
+                    color: #2A96AE;
+                    font-size: 16px;
+                }
+
+                button.msg-subscribe {
+                    position: absolute;
+                    right: 0;
+                    top: -8px;
+                    font-size: 16px;
+                    background-color: #2A96AE;
+                    border: none;
+                    border-radius: 5px;
+                    color: white;
+                    padding: 10px 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: background-color 0.2s ease-in-out;
+                }
+
+                button.msg-subscribe:hover {
+                    background-color: #2AA6C1;
+                }
+            }
+        }
+
+        div.related-news {
+            position: relative;
+            display: inline-block;
+            margin: 80px 0;
+            
+            div.new {
+                padding: 20px 0;
+
+                p.news-title {
+                    font-size: 16px;
+                }
+
+                span.recieved-date {
+                    margin: 40px 0px 10px 0px;
+                    display: inline-block;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 120%;
+                    letter-spacing: -0.02em;
+                }
+            }
+        }
+    }
+}

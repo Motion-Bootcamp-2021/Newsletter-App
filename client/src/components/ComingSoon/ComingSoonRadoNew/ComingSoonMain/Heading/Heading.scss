@@ -1,0 +1,36 @@
+$xl-screen-width-min: 1440px;
+$lg-screen-width-min: 1200px;
+$md-screen-width-min: 960px;
+$sm-screen-width-min: 540px;
+$xs-screen-width-min: 320px;
+
+.heading-element{
+    display: flex;
+    justify-content: center;
+
+    h1{
+        font-family: Roboto;
+        font-weight: 300;
+        // font-size: 54px;
+
+        @media(min-width: $xs-screen-width-min){
+            font-size: 13px;
+        }
+        
+        @media(min-width: $sm-screen-width-min){
+            font-size: 22px;
+        }
+        
+        @media(min-width: $md-screen-width-min){
+            font-size: 38px;
+        }
+        
+        @media(min-width: $lg-screen-width-min){
+            font-size: 46px;
+        }
+        
+        @media(min-width: $xl-screen-width-min){
+            font-size: 54px;
+        }
+    }
+}

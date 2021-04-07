@@ -1,0 +1,22 @@
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 900px){ 
+        flex-wrap:wrap;
+        margin:40px
+    }
+    @media (max-width: 600px){ 
+        margin: auto;
+    }
+    .subscribe-button {
+        margin-left: 20px;
+
+        @media (max-width: 900px){ 
+            margin: auto;
+        }
+        @media (max-width: 600px){ 
+            margin: auto;
+        }
+    }
+}

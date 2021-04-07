@@ -1,0 +1,57 @@
+.verticalOne {
+    position: absolute;
+    width: 1px;
+    height: 1024px;
+    left: 88px;
+    top: 0px;
+    background: #000000;
+    opacity: 0.1;
+}
+
+.verticalTwo {
+    position: absolute;
+    width: 1px;
+    height: 1024px;
+    left: 536px;
+    top: 0px;
+    background: #000000;
+    opacity: 0.1;
+}
+
+.bookmark{
+    position: absolute;
+    width: 70px;
+    height: 17px;
+    left: 1327px;
+    top: 40px;
+
+    font-family: Scto Grotesk A;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+.share{
+    position: absolute;
+    width: 70px;
+    height: 17px;
+    left: 443px;
+    top: 40px;
+
+    font-family: Scto Grotesk A;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}

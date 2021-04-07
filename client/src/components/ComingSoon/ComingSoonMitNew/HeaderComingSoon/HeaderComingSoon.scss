@@ -1,0 +1,32 @@
+.header-shadow {
+    height: 121px;
+    filter: drop-shadow(0 5px 20px #747D8C29);
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        height: 121px;
+        background: #F9FAFC 0% 0% no-repeat padding-box;
+        clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+
+        .social-medias {
+            padding-top: 44px;
+            padding-right: 100px;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .header-shadow {
+        height: 80px;
+
+        .header {
+            height: 80px;
+
+            .social-medias {
+                padding-top: 24px;
+                padding-right: 70px;
+            }
+        }
+    }
+}

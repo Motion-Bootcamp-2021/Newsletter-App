@@ -1,0 +1,11 @@
+.topic-btn {
+    button {
+        all: unset;
+        cursor: pointer;
+        opacity: 50%;
+    }
+
+    .selected {
+        opacity: 100%;
+    }
+}

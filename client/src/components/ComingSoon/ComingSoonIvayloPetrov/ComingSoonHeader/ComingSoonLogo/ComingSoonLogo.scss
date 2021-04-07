@@ -1,0 +1,10 @@
+.coming-soon-logo {
+    .logo-text {
+        color: #747d8c;
+        font-size: 22.5px;
+    }
+
+    @media screen and (max-width: 549px) {
+        margin-top: 35px;
+    }
+}

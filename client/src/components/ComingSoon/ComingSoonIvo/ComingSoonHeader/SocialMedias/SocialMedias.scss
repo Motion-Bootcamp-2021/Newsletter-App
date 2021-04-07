@@ -1,0 +1,35 @@
+.social-media-container {
+    margin-right: 42px;
+
+    a {
+        padding: 0px 9px 0px 9px;
+
+
+    }
+
+    a .social-media-icon .a,
+    a .social-media-icon .b {
+        transition: fill 0.2s ease-in-out;
+
+    }
+    
+    a .social-media-icon:hover .a {
+        fill: #F1F2F6;
+    }
+
+    a .social-media-icon:hover .b {
+        fill: #ced6e0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .social-media-container {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .social-media-container {
+        width: 210px;
+    }
+}

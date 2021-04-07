@@ -1,0 +1,68 @@
+.article-rectangle {
+    .article {
+        position: sticky;
+        width: 258px;
+        height: 294px;
+
+        border: 1px solid #000000;
+        box-sizing: border-box;
+
+        .square {
+            position: absolute;
+            width: 66px;
+            height: 66px;
+            left: 24px;
+            top: 24px;
+
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        h3 {
+            position: absolute;
+            width: 118px;
+            height: 22px;
+            left: 24px;
+            top: 113px;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            font-size: 18px;
+            line-height: 21.6px;
+            color: #000000;
+        }
+
+        p {
+            position: absolute;
+            width: 212px;
+            height: 65px;
+            left: 24px;
+            top: 150px;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23.1px;
+            letter-spacing: -0.02em;
+            color: #050505;
+        }
+
+        button {
+            position: absolute;
+            width: 74px;
+            height: 19px;
+            left: 24px;
+            top: 244px;
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.2px;
+            color: #000000;
+
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+    }
+}

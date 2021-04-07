@@ -1,0 +1,23 @@
+@import "../../../variables";
+
+.coming-soon-title {
+    font-weight: 300;
+    font-size: 54px;
+    color: #080808;
+    letter-spacing: 0;
+    line-height: 65px;
+    text-align: center;
+
+    @media screen and (max-width: $sm-screen-width-max) {
+        font-size: 38px;
+    }
+
+    @media screen and (max-width: $xs-screen-width-max) {
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    @media screen and (max-width: 549px) {
+        font-size: 28px;
+    }
+}
