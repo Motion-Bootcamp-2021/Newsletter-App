@@ -1,0 +1,30 @@
+.feed-container {
+    padding-bottom: 14px;
+
+    .img-container {
+        user-select: none;
+
+        img {
+            width: 186px;
+            height: 134px;
+            object-fit: cover;
+        }
+    }
+
+    .props-container {
+        h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+        }
+    }
+}
