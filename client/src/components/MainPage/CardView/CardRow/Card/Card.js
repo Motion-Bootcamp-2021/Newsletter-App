@@ -1,0 +1,50 @@
+import { useEffect, useState } from 'react';
+import CardOptions from '../../../shared/CardOptions';
+import { ReactComponent as UncheckedIcon } from '../../../shared/assets/checkbox-unchecked.svg';
+import { ReactComponent as CheckedIcon } from '../../../shared/assets/checkbox-checked.svg';
+import './Card.scss';
+
+function Card({ news, addToSelected, removeFromSelected , selected}) {
+    const [checked, setChecked] = useState(selected);
+
+    useEffect(() => {
+        setChecked(selected);
+    }, [selected]);
+
+    const onCheck = () => {
+        if (checked) {
+            removeFromSelected(news._id);
+        } else {
+            addToSelected(news._id);
+        }
+        setChecked(!checked);
+    }
+
+    return (
+        <article className="card-view-card">
+            <div className="img-container">
+                <img src={news.image} alt=""></img>
+            </div>
+
+            <div className="title-container">
+                <h3>{news.title}</h3>
+
+                <div className="info-container">
+                    <p className="date">{new Date(news.date).toDateString().substring(4)}</p>
+                    <p className="newsletter">{news.newsletter.name}</p>
+                    <p className="read-time">{news.readTime} min read</p>
+                </div>
+            </div>
+
+            <div className="options-container">
+                <div className="checkbox-container" onClick={onCheck}>
+                    {checked ? <CheckedIcon /> : <UncheckedIcon />}
+                </div>
+
+                <CardOptions id={news._id} />
+            </div>
+        </article>
+    );
+}
+
+export default Card;
