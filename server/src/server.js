@@ -22,13 +22,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(routes);
 
-const certLocation = process.env.CERT;
-const keyLocation = process.env.KEY;
+// const certLocation = process.env.CERT;
+// const keyLocation = process.env.KEY;
 
 if (process.env.NODE_ENV == 'production') {
-    const cert = fs.readFileSync(path.resolve(certLocation, './cert.pem'), 'utf8');
-    const key = fs.readFileSync(path.resolve(keyLocation, './privkey.pem'), 'utf8');
-    const credentials = { key, cert };
+    // const cert = fs.readFileSync(path.resolve(certLocation, './cert.pem'), 'utf8');
+    // const key = fs.readFileSync(path.resolve(keyLocation, './privkey.pem'), 'utf8');
+    // const credentials = { key, cert };
 
     https.createServer(credentials, app).listen(443, () => console.log('Server is running on port 443'));
 
