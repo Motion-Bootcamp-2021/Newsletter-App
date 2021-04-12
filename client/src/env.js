@@ -1,6 +1,6 @@
 const serverAddress = {
     development: 'http://localhost:5000',
-    production: 'https://binaryzone.tk'
+    production: 'https://newsletter-app-motion.herokuapp.com/'
 };
 
 export const SERVER_ADDRESS = serverAddress[process.env.NODE_ENV]
