@@ -7,7 +7,7 @@ export const SERVER_ADDRESS = serverAddress[process.env.NODE_ENV]
 
 const domainAddress = {
     development: 'http://localhost:3000',
-    production: 'https://letterbox-binary-zone.web.app'
+    production: 'https://newsletter-app-10766.web.app'
 }
 
 export const DOMAIN_ADDRESS = domainAddress[process.env.NODE_ENV];
